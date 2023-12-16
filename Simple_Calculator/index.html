@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <div class="container">
+        <div class="wrapper">
+            <h1>Simple Calculator</h1>
+            <div class="calculator">
+                <div class="inp-Fields">
+                    <input type="number" placeholder="Enter first number" id="n1" />
+                    <input type="number" placeholder="Enter first number" id="n2"/>
+                    <span class="eqal">=</span><input type="number" placeholder="Result"   id="res"/>
+                </div>
+                <div class="btns">
+                    <button class="add" onclick="addition()">Add</button>
+                    <button class="sub" onclick="subtraction()">Subtract</button>
+                    <button class="mul" onclick="multiplication()">Multiply</button>
+                    <button class="divide" onclick="division()">Divide</button>
+                    <button class="clear" onclick="clearInput()">Clear</button>
+                    <select id="operator" class="operator">
+                        <option>Select</option>
+                        <option value="+">Add</option>
+                        <option value="-">Sub</option>
+                        <option value="*">Mul</option>
+                        <option value="/">Div</option>
+                        <option value="c">Clear</option>
+                    </select>
+                    <button id="calc" onclick="calculate()" >Calculate</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="./script.js"></script>
+</body>
+
+</html>

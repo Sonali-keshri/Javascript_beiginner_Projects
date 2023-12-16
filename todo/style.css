@@ -1,0 +1,99 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+    width: 100%;
+}
+
+#main{
+    width: 100%;
+    height: 100vh;
+    background-color: royalblue;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.wrapper{
+    padding: 10px;
+    width: 30%;
+    height: 80vh;
+    background-color: lightblue;
+}
+
+.inpTask{
+    display: flex;
+    justify-content: space-between;
+    background-color: lightcyan;
+    border-radius: 20px;
+}
+.inpTask input{
+    width: 100%;
+    padding: 10px;
+    background-color: transparent;
+    border: none;
+    color: #000;
+    padding-left: 20px;
+    
+}
+input:focus{
+    outline: none;
+}
+.inpTask button{
+    width: 100px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 1.8rem;
+    border: none;
+    background-color: royalblue;
+
+}
+#taskList{
+    margin: 10px 0px;
+    padding: 10px;
+    width: 100%;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 400;
+}
+
+ul li{
+    position: relative;
+    padding: 12px 8px 12px 40px;
+    list-style: none;
+    cursor: pointer;
+    user-select: none;
+    font-size: 1rem;
+    line-height: .8;
+    background-color: lightgreen;
+    margin-bottom: 10px;
+}
+ul li::before{
+    content: "";
+    width: 18px;
+    height: 18px;
+    position: absolute;
+    background-image: url(assests/unchecked.png);
+    background-size: cover;
+    background-position: center;
+    top:10px;
+    left:8px;
+}
+
+ul li span{
+    position: absolute;
+    right: 10px;
+    top: 20;
+    font-size: 1rem;
+}
+ul li.checked{
+    text-decoration:line-through;
+    opacity: .8;
+}
+ul li.checked::before{
+    background-image: url(assests/check.png);
+}
+#addBtn{
+   
+}
