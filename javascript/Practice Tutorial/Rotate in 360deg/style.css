@@ -1,0 +1,12 @@
+.container{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.box{
+    width: 200px;
+    height: 160px;
+    background-color: teal;
+    transition: 6s;
+}

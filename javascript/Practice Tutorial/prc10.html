@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <h1 id="heading"> Welcome to Code With Harry</h1>
+    <div id="myfirst" class="child red good" id="first">child 1</div>
+    </div>
+    <script>
+        let Student = ["Ayush","Rishu","Gaurav","Gopal"];
+        // localStorage.setItem('Student','Roll No.');
+        localStorage.setItem('Sonali','20781A05H1');
+        localStorage.setItem('Rakhi','20781A05G9');
+        localStorage.setItem('List of Student',JSON.stringify(Student));
+        localStorage.removeItem('Student');
+        let name = JSON.parse(localStorage.getItem('List of Student'));
+        console.log(name);
+        // localStorage.clear(); 
+    </script>
+</body>
+</html>

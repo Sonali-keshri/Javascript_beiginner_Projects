@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Date Practice!</h1>
+    <script>
+        var days = ["SUN","MON","TUE","WED","THRU","FRI","SAT"]
+        var now = new Date();
+        console.log(now);
+        // console.log(now.getDate());
+        // console.log(now.getDay());
+        // console.log(now.getHours());
+        // console.log(now.getMinutes());
+        // console.log(now.getMilliseconds());
+        // console.log(now.getSeconds());
+        // console.log(now.getFullYear());
+        // console.log(days[now.getDay()]);
+    
+        var date = now.getDate();
+        var day = days[now.getDay()];
+        var hrs = now.getHours();
+        var min = now.getMinutes();
+        var milisec = now.getMilliseconds();
+        var sec = now.getSeconds();
+        var year = now.getFullYear();
+        var month = now.getMonth();
+
+        console.log(date +"/"+month+"/"+year  +"  "+ day)
+
+
+        var tmrdate = new Date("09-10-2021")
+        console.log(tmrdate);
+        </script>
+        
+    
+</body>
+</html>

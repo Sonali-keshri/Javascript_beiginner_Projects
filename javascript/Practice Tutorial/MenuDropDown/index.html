@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    *{
+        padding: 0px;
+        margin: 0px;
+        text-align: left;
+    }
+    .menuContainer{
+        margin: 10px 5px;
+        width: 100px;
+        height: 30px;
+        border: 2px solid black;
+        padding: 4px 20px;
+        color: black;
+        text-align: center;
+        border-radius: 10px;
+        font-size: 26px;
+        /* background-color: burlywood; */
+        cursor: pointer;
+        user-select: none;
+    }
+</style>
+<body>
+    <div class="menuContainer" onclick="openMenu()">Menu</div>
+</body>
+<script>
+var menuOpen= false;
+function openMenu(){
+    if(menuOpen === false) {
+        var menuContainer = document.getElementsByClassName("menuContainer")[0];
+        var dropDownContainer = document.createElement("div");
+        dropDownContainer.setAttribute("id", "menu_dropdown_container");
+        dropDownContainer.setAttribute("style", "position:absolute; margin: 10px 0px; width:200px; height:80px; background-color: burlywood; font-size: 18px")
+        var menuItem1 = document.createElement("div");
+        menuItem1.textContent = "Menu Item 1";
+        dropDownContainer.appendChild(menuItem1);
+        var menuItem2 = document.createElement("div");
+        menuItem2.textContent = "Menu Item 2";
+        dropDownContainer.appendChild(menuItem2);
+        menuContainer.appendChild(dropDownContainer);
+        menuOpen = true;
+        
+        // // add event listener
+        document.addEventListener("click" function(){
+            closeMenu()
+
+        // }
+    }
+    else {
+        closeMenu()
+    }
+    function closeMenu() {
+        var menuDropDownContainer = document.getElementById("menu_dropdown_container");
+        menuDropDownContainer.parentNode.removeChild(menuDropDownContainer);
+        menuOpen = false;
+    }
+}
+</script>
+</html>

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+
+        .mainBox {
+            height: 90vh;
+            margin: 4px;
+            padding: 6px 2px 0px 10px;
+            display: flex;
+            font-size: 25px;
+            border: 2px solid brown;
+        }
+
+        #table2 {
+            /* border: 2px solid brown; */
+            margin-right: 30px;
+        }
+
+        h2 {
+            text-align: center;
+            font-size: 30px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h2>Table</h2>
+    <div class="mainBox">
+        <div id="table2"></div>
+        <div id="table3"></div>
+    </div>
+
+    </div>
+
+
+    <script>
+        let table2 = document.getElementById("table2");
+        let text1 = "";
+        for (let i = 1; i <= 10; i++) {
+            let result1 = 2 * i;
+            text1 += "2 x " + i + " = " + result1 + "<br/>";
+        }
+
+        table2.innerHTML = text1
+        let table3 = document.getElementById("table3");
+        let text2 = "";
+        for (let i = 1; i <= 10; i++) {
+            let result2 = 3 * i;
+            text2 += "3 x " + i + " = " + result2 + "<br/>";
+        }
+        table3.innerHTML = text2
+
+    </script>
+</body>
+
+</html>

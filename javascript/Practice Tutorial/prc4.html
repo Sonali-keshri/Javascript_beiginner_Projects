@@ -1,0 +1,25 @@
+<html>
+    <head>
+        <title>
+
+        </title>
+    </head>
+    <body>
+        <h1>We will Greet You!</h1>
+
+        <hr/>
+        <input id="databox" />
+        <button onclick="myclickfunction()">Click Me!</button>
+        <hr/>
+        <h1 id="result"></h1>
+        <script>
+            let myelement = document.getElementById("databox");
+
+            let myclickfunction = () => {
+                // alert("Hey!"+ <br/> "How r u ? " + myelement.value);
+                let resultelement = document.getElementById("result");
+                resultelement.innerText = "Hey! " + myelement.value;
+            };
+        </script>
+    </body>
+</html>

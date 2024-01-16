@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<p id="demo" onclick ="myFunction()" style="font-size: 30px; border: 2px solid black; display: inline-block ">Click on button to change my text color.</p>
+<!-- <button id="click" onclick ="myFunction()">Click</button> -->
+<script>
+    let color = ['red','green','blue','brown'];
+    // let click = document.getElementById("click");
+    let demo = document.getElementById("demo");
+	
+    let myFunction = () => {
+ 	      let chngcolor = Math.floor(Math.random()*color.length);
+  	    demo.style.color = color[chngcolor];
+        demo.style.borderColor = color[chngcolor];
+    }
+</script>
+
+</body>
+</html>

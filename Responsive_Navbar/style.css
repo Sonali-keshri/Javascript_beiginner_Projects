@@ -12,7 +12,7 @@
     align-items: center;
     justify-content: space-between;
     padding: 10px;
-    /* gap: 3rem; */
+ 
 }
 .logo{
     padding-left: 60px;
@@ -26,7 +26,6 @@
     justify-content: center;
     gap: 2rem;
     flex: 1;
-    /* border: 2px solid green; */
 }
 li a{
     text-decoration: none;

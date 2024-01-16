@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .box{
+            height:500px;
+            width:700px;
+            border: 2px solid rgb(124, 110, 219);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            color: tomato;
+            font-size: 24px;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            
+        }
+        #anotherText{
+            border: 2px solid black;
+            padding: 9px;
+            margin: 5px;
+            font-size: 18px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+            <h4 class="text">Wait For Sometime.
+                <br>        Paragraph will Show
+                <!-- <div id="anotherText">
+                    hhlk
+                </div> -->
+            </h4>
+        </div>
+    </div>
+    <script>
+            setTimeout(function() {
+            var textBox = document.querySelector(".box") 
+            var divElem = document.querySelector(".text")
+            divElem.innerHTML = "Here we r doing practice on javascript";
+            textBox.style.backgroundColor = "wheat";
+            textBox.style.borderColor = "teal";
+            // divElem.style.color = "green";
+            divElem.setAttribute("style","text-align:center;padding-left:4px;padding-right:4px;font-size:26px;color:teal")
+        }, 3000);
+        // var anotherDiv = document.getElementsByid("anotherText")
+        let box = document.querySelector(".box")
+        let element = document.createElement("div");
+        element.className = 'insideElem';
+        let elementText = document.createTextNode("HELLO GOOGLE");
+        element.setAttribute("style","font-weight:bolder;color:black")
+        element.appendChild(elementText);
+        box.appendChild(element);
+        
+
+
+    </script>
+</body>
+</html>
